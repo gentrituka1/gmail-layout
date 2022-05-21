@@ -10,7 +10,7 @@
     grid-template:
       'header header header header' auto
       'left-menu emails settings shortcuts' 1fr /
-      230px 1fr 180px 50px;
+      200px 1fr 180px 50px;
   }
   
   /* HEADER SECTION */
@@ -136,7 +136,16 @@
   
   .emails {
     grid-area: emails;
-    background-color: #ff00ff40;
+    padding: 1rem;
+    background-color: #fff;
+    overflow: scroll;
+    display: grid;
+    grid-gap: 4px;
+  }
+  .emails p{
+      border: 2px solid #fff;
+      box-shadow: 2px 2px 2px 2px rgb(179, 176, 176);
+      padding:5px ;
   }
   
   /* SETTINGS SECTION  */
@@ -150,7 +159,7 @@
   
   .shortcuts {
     grid-area: shortcuts;
-    background-color: #ffff0040;
+    background-color: white;
   }
 .first-row{
     margin-right: 90px;
@@ -192,4 +201,11 @@
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: auto 1fr;
+}
+.shortcuts-button{
+  margin: 5px;
+  display: grid;
+}
+.add-button{
+  margin: 13px
 }
