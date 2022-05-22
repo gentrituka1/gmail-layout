@@ -183,11 +183,9 @@
     grid-area: settings;
     border: 1px solid whitesmoke;
     background-color: white;
-  }
-  .settings{
     padding: 15px;
     display: grid;
-    grid-template-rows: 20px 50px 100px;
+    grid-template-rows: 30px 50px 50px;
     gap: 15px;
   }
   .line-1{
@@ -206,8 +204,20 @@
     font-size: 15px;
     margin-top: 10px;
   }
-  
-
+  .density{
+    margin-top: 15px;
+    font-size: 13px;
+  }
+  .density-icons{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 40px 40px;
+  }
+  .density-buttons{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 50px auto;
+  }
 
   /* SHORTCUTS SECTION  */
   
